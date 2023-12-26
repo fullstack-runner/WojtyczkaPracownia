@@ -42,4 +42,12 @@ svg,
 video {
   display: block;
   min-width: 100%;
+}
+
+.topside {
+  display: grid;
+}
+.topside__logo img {
+  min-width: 350px;
+  height: 350px;
 }/*# sourceMappingURL=style.css.map */

@@ -40,3 +40,18 @@ video {
 	display: block;
 	min-width: 100%;
 }
+
+//open side
+
+.topside{
+    display: grid;
+
+    &__logo{
+        img{
+            min-width: 350px;
+            height: 350px;
+        }
+        
+    }
+
+}
