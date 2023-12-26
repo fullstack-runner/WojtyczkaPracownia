@@ -43,15 +43,61 @@ video {
 
 //open side
 
-.topside{
-    display: grid;
+.topside {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
 
-    &__logo{
-        img{
-            min-width: 350px;
-            height: 350px;
-        }
-        
-    }
+	align-items: center;
 
+	// gap: 20px;
+
+	&__text {
+		display: grid;
+		grid-column: 1/4;
+		grid-row: 1/2;
+		place-content: center;
+		p {
+			font-size: 1rem;
+            font-weight: bold;
+		}
+		// justify-content: center;
+		// align-items: center;
+	}
+
+	&__logo {
+		display: grid;
+		grid-column: 2 / 3;
+		grid-row: 2 / 3;
+		place-content: center;
+		// justify-content: center;
+		// align-items: center;
+		img {
+			min-width: 250px;
+			height: 250px;
+		}
+	}
+	a {
+		// align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		grid-column: 2/3;
+		grid-row: 3/4;
+        color: black;
+
+		.blackline {
+			margin-top: 10px;
+			width: 20%;
+			height: 2px;
+			background-color: black;
+			transition: width 0.3s linear;
+		}
+	}
+	a:hover {
+		.blackline {
+			width: 75%;
+		}
+	}
 }
