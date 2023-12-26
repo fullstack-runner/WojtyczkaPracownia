@@ -20,8 +20,7 @@ p {
 
 body {
 	min-height: 100svh;
-	overflow-y: hidden;
-	overflow-x: auto;
+
 	// overflow-x: auto;
 	scroll-behavior: smooth;
 }
@@ -98,9 +97,15 @@ video {
 	}
 }
 
+
+
 @media (min-width: 1200px) {
+	body {
+		overflow-y: hidden;
+		overflow-x: auto;
+	}
 	.topside {
-		
+		margin-top: -75px;
 
 		p {
 			font-size: 2rem;
