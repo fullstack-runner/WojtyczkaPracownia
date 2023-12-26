@@ -1,0 +1,45 @@
+*,
+::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html {
+  font-family: "Cinzel", serif;
+}
+
+h1,
+p {
+  font-family: "Cinzel", serif;
+}
+
+body {
+  min-height: 100svh;
+  overflow-y: hidden;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+  letter-spacing: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  min-width: 100%;
+}/*# sourceMappingURL=style.css.map */

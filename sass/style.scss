@@ -1,0 +1,42 @@
+*,
+::before,
+*::after {
+	box-sizing: border-box;
+}
+* {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+html {
+	// color-scheme: dark light;
+	font-family: 'Cinzel', serif;
+}
+h1,
+p {
+	font-family: 'Cinzel', serif;
+}
+
+body {
+	min-height: 100svh;
+	overflow-y: hidden;
+	overflow-x: auto;
+	// overflow-x: auto;
+	scroll-behavior: smooth;
+}
+li {
+	list-style: none;
+	letter-spacing: 5px;
+}
+a {
+	text-decoration: none;
+}
+
+img,
+picture,
+svg,
+video {
+	display: block;
+	min-width: 100%;
+}
