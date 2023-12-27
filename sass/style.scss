@@ -1,3 +1,4 @@
+@use './mixins.scss' as *;
 *,
 ::before,
 *::after {
@@ -118,6 +119,13 @@ video {
 		border-radius: 8px;
 	}
 
+	&:hover {
+		.burger-btn__bars::after,
+		.burger-btn__bars::before {
+			width: 100%;
+		}
+	}
+
 	&__box {
 		position: relative;
 		width: 40px;
@@ -127,7 +135,58 @@ video {
 	&__bars,
 	&__bars::after,
 	&__bars::before {
-		
+		@include burgerBtn;
+		background-color: #610909;
+	}
+	&__bars {
+		width: 100%;
+		&::after {
+			top: 13px;
+			width: 60%;
+		}
+		&::before {
+			top: 27px;
+			width: 30%;
+			transition-delay: 0.1s;
+		}
+	}
+}
+
+// Nav
+
+.nav {
+	position: fixed;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100svh;
+	width: 100%;
+	background-color: green;
+	background-image: darkgreen;
+	z-index: 100;
+
+	&__item {
+		position: relative;
+		display: block;
+		margin: 0.5em 0em;
+		padding: 0.5em 2em;
+		font-size: 2.8rem;
+		color: white;
+		&::before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 3px;
+			height: 100%;
+			transform: scaleY(.1);
+			background-color: white;
+			content: '';
+			transition: transform .3s linear;
+		}
+		&:hover::before{
+			transform: scaleY(.8);
+		}
 	}
 }
 
