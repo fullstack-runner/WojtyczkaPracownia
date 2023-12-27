@@ -127,12 +127,7 @@ video {
 	&__bars,
 	&__bars::after,
 	&__bars::before {
-		position: absolute;
-		right: 0;
-		height: 3px;
-		content: '';
-		background-color: #fff;
-		transition: width .3s;
+		
 	}
 }
 
