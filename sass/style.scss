@@ -162,9 +162,15 @@ video {
 	align-items: center;
 	height: 100svh;
 	width: 100%;
+	transform: translateX(100%);
 	background-color: green;
 	background-image: darkgreen;
+	transition: 0.5s;
 	z-index: 100;
+
+	&--active {
+		transform: translateX(0);
+	}
 
 	&__item {
 		position: relative;
@@ -179,13 +185,13 @@ video {
 			left: 0;
 			width: 3px;
 			height: 100%;
-			transform: scaleY(.1);
+			transform: scaleY(0.1);
 			background-color: white;
 			content: '';
-			transition: transform .3s linear;
+			transition: transform 0.3s linear;
 		}
-		&:hover::before{
-			transform: scaleY(.8);
+		&:hover::before {
+			transform: scaleY(0.8);
 		}
 	}
 }

@@ -168,9 +168,17 @@ video {
           align-items: center;
   height: 100svh;
   width: 100%;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
   background-color: green;
   background-image: darkgreen;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   z-index: 100;
+}
+.nav--active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 .nav__item {
   position: relative;
