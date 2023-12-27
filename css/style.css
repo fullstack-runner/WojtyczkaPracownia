@@ -13,6 +13,7 @@
 
 html {
   font-family: "Cinzel", serif;
+  font-size: 62.5%;
 }
 
 h1,
@@ -22,6 +23,7 @@ p {
 
 body {
   min-height: 100svh;
+  font-size: 1.6rem;
   scroll-behavior: smooth;
 }
 
@@ -104,6 +106,36 @@ video {
   width: 75%;
 }
 
+.burger-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 1em;
+  background: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  z-index: 1000;
+}
+.burger-btn:focus {
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+}
+.burger-btn__box {
+  position: relative;
+  width: 40px;
+  height: 30px;
+}
+.burger-btn__bars, .burger-btn__bars::after, .burger-btn__bars::before {
+  position: absolute;
+  right: 0;
+  height: 3px;
+  content: "";
+  background-color: #fff;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
 @media (min-width: 1200px) {
   body {
     overflow-y: hidden;
@@ -128,5 +160,20 @@ video {
   }
   .topside__portfoliosender:hover .blackline {
     width: 80%;
+  }
+  .nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 65px;
+    -webkit-box-shadow: -5px -5px 10px black;
+            box-shadow: -5px -5px 10px black;
   }
 }/*# sourceMappingURL=style.css.map */

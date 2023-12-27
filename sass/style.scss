@@ -12,6 +12,7 @@
 html {
 	// color-scheme: dark light;
 	font-family: 'Cinzel', serif;
+	font-size: 62.5%;
 }
 h1,
 p {
@@ -20,6 +21,7 @@ p {
 
 body {
 	min-height: 100svh;
+	font-size: 1.6rem;
 
 	// overflow-x: auto;
 	scroll-behavior: smooth;
@@ -97,7 +99,46 @@ video {
 	}
 }
 
+// NAVIGACJA
+// BURGER BTN
 
+.burger-btn {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	padding: 1em;
+	background: none;
+	border: 1px solid transparent;
+	cursor: pointer;
+	z-index: 1000;
+
+	&:focus {
+		outline: none;
+		border: 1px solid rgba(255, 255, 255, 0.5);
+		border-radius: 8px;
+	}
+
+	&__box {
+		position: relative;
+		width: 40px;
+		height: 30px;
+	}
+
+	&__bars,
+	&__bars::after,
+	&__bars::before {
+		position: absolute;
+		right: 0;
+		height: 3px;
+		content: '';
+		background-color: #fff;
+		transition: width .3s;
+	}
+}
+
+// Strona ABOUTME
+
+//MediaQuery on Desktop
 
 @media (min-width: 1200px) {
 	body {
@@ -128,5 +169,17 @@ video {
 				width: 80%;
 			}
 		}
+	}
+
+	// NAVIGACJA DESKTOP
+	.nav {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		justify-content: center;
+		align-items: center;
+		position: fixed;
+		width: 100vw;
+		height: 65px;
+		box-shadow: -5px -5px 10px black;
 	}
 }
