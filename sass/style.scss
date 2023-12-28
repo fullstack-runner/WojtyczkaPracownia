@@ -144,7 +144,8 @@ video {
 	&__bars::after,
 	&__bars::before {
 		@include burgerBtn;
-		background-color: #be9c51;
+		// background-color: #be9c51;
+		background-color: white;
 	}
 	&__bars {
 		width: 100%;
