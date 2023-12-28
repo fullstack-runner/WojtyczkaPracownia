@@ -237,7 +237,8 @@ video {
 .aboutme-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 100px 1fr 1fr;
+  grid-template-rows: 100px 80svh 1fr;
+  padding-bottom: 60px;
 }
 .aboutme-container h1 {
   display: -webkit-box;
@@ -274,7 +275,6 @@ video {
   border-radius: 8px;
 }
 .aboutme-container__description {
-  margin-top: -40px;
   grid-column: 2/3;
   grid-row: 3/4;
   padding: 0 10px;
