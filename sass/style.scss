@@ -136,7 +136,7 @@ video {
 	&__bars::after,
 	&__bars::before {
 		@include burgerBtn;
-		background-color: #610909;
+		background-color: #be9c51;
 	}
 	&__bars {
 		width: 100%;
@@ -163,7 +163,7 @@ video {
 	height: 100svh;
 	width: 100%;
 	transform: translateX(100%);
-	background-color: green;
+	background-color: #2f5f56;
 	background-image: darkgreen;
 	transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
 
@@ -179,7 +179,7 @@ video {
 		margin: 0.5em 0em;
 		padding: 0.5em 2em;
 		font-size: 2.8rem;
-		color: white;
+		color: #be9c51;
 		&::before {
 			position: absolute;
 			top: 0;
@@ -213,9 +213,8 @@ video {
 .aboutme-container {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 100px 1fr 1fr ;
+	grid-template-rows: 100px 1fr 1fr;
 	h1 {
-
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -223,9 +222,8 @@ video {
 		grid-column: 2/3;
 		grid-row: 1/2;
 		font-weight: bold;
-		
 	}
-	h1::after{
+	h1::after {
 		// flex-direction: column;
 		content: '';
 		width: 15%;
@@ -235,10 +233,10 @@ video {
 
 	&__selfpictures {
 		// position: relative;
-		
+
 		grid-column: 2/3;
 		grid-row: 1/2;
-		padding:0 10px;
+		padding: 0 10px;
 		margin-top: 100px;
 		// align-items: center;
 		img {
@@ -248,26 +246,70 @@ video {
 	}
 
 	&__description {
-
 		margin-top: -40px;
 		grid-column: 2/3;
 		grid-row: 3/4;
 		padding: 0 10px;
 		float: start;
-		.heading{
+		.heading {
 			font-size: 1.7rem;
 			font-weight: bold;
 		}
-		span{
+		span {
 			font-weight: bold;
 		}
-		p{
+		p {
 			font-size: 1.4rem;
 			margin-bottom: 10px;
 		}
-
 	}
 }
+
+.footer {
+	
+	
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	width: 100vw;
+	height: 50px;
+	bottom: 0;
+	background-color: #fff;
+	box-shadow: 5px 5px 20px black;
+
+	&__copyright {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		grid-column: 1 / 2;
+		gap: 10px;
+	}
+
+	
+	&__social-media {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		grid-column: 3/4;
+		margin-right: 20px;
+		color: #000;
+		
+	}
+
+	
+
+	&__social-media {
+		gap: 25px;
+		img {
+			height: 15px;
+			min-width: 20px;
+		}
+	}
+}
+	
+
 
 //MediaQuery on Desktop
 
