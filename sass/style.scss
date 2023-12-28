@@ -110,11 +110,11 @@ video {
 
 .burger-btn {
 	position: fixed;
+	max-height: 100svh;
 	top: 20px;
 	right: 20px;
 	padding: .5em;
 	background: #000000b0;
-	
 	border: 1px solid transparent;
 	border-radius: 8px;
 	cursor: pointer;
