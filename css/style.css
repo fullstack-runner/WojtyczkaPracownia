@@ -111,9 +111,10 @@ video {
   position: fixed;
   top: 20px;
   right: 20px;
-  padding: 1em;
-  background: none;
+  padding: 0.5em;
+  background: rgba(0, 0, 0, 0.6901960784);
   border: 1px solid transparent;
+  border-radius: 8px;
   cursor: pointer;
   z-index: 1000;
 }
@@ -279,10 +280,12 @@ video {
   grid-column: 2/3;
   grid-row: 3/4;
   padding: 0 10px;
-  text-align: justify;
+  letter-spacing: 0.05em;
+  text-align: left;
+  line-height: 1.6em;
 }
 .aboutme-container__description .heading {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   font-weight: bold;
 }
 .aboutme-container__description span {
@@ -290,7 +293,7 @@ video {
 }
 .aboutme-container__description p {
   font-size: 1.4rem;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 
 .footer {
@@ -321,7 +324,6 @@ video {
       -ms-flex-align: center;
           align-items: center;
   grid-column: 1/2;
-  gap: 10px;
 }
 .footer__social-media {
   display: -webkit-box;
