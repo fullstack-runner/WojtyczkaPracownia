@@ -350,9 +350,6 @@ video {
     overflow-y: hidden;
     overflow-x: auto;
   }
-  .topside {
-    margin-top: -75px;
-  }
   .topside p {
     font-size: 2rem;
   }
