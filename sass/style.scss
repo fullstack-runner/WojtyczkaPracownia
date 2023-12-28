@@ -48,12 +48,14 @@ video {
 //open side Mobile first
 
 .topside {
+	max-height: 100svh;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(3, 1fr);
 	align-items: center;
 	gap: 20px;
-	overflow-y: hidden;
+	// overflow-y: hidden;
+	// 	overflow-x: auto;
 
 	&__text {
 		display: grid;

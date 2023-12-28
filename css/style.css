@@ -45,6 +45,7 @@ video {
 }
 
 .topside {
+  max-height: 100svh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -52,7 +53,6 @@ video {
       -ms-flex-align: center;
           align-items: center;
   gap: 20px;
-  overflow-y: hidden;
 }
 .topside__text {
   display: grid;
