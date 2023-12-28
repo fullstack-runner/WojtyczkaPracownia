@@ -113,7 +113,7 @@ video {
 	max-height: 100svh;
 	top: 20px;
 	right: 20px;
-	padding: .5em;
+	padding: 0.5em;
 	background: #000000b0;
 	border: 1px solid transparent;
 	border-radius: 8px;
@@ -222,9 +222,8 @@ video {
 .aboutme-container {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 80px 70svh 1fr;
-	
-	
+	grid-template-rows: 80px 75svh 1fr;
+
 	h1 {
 		display: flex;
 		justify-content: center;
@@ -233,7 +232,6 @@ video {
 		grid-column: 2/3;
 		grid-row: 1/2;
 		font-weight: bold;
-		
 	}
 	h1::after {
 		// flex-direction: column;
@@ -252,7 +250,6 @@ video {
 		margin-top: 25%;
 		// margin: 50px;
 
-		
 		img {
 			width: 90svw;
 			border-radius: 8px;
@@ -264,8 +261,8 @@ video {
 		grid-column: 2/3;
 		grid-row: 3/4;
 		padding: 0 10px;
-		letter-spacing: .05em;
-		text-align:left;
+		letter-spacing: 0.05em;
+		text-align: left;
 		line-height: 1.6em;
 
 		.heading {

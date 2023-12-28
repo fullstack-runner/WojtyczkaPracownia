@@ -241,7 +241,7 @@ video {
 .aboutme-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 80px 70svh 1fr;
+  grid-template-rows: 80px 75svh 1fr;
 }
 .aboutme-container h1 {
   display: -webkit-box;
