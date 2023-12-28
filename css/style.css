@@ -52,6 +52,7 @@ video {
       -ms-flex-align: center;
           align-items: center;
   gap: 20px;
+  overflow-y: hidden;
 }
 .topside__text {
   display: grid;

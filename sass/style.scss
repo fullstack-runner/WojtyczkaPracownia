@@ -23,6 +23,8 @@ p {
 body {
 	min-height: 100svh;
 	font-size: 1.6rem;
+	// overflow-y: hidden;
+	// 	overflow-x: auto;
 
 	// overflow-x: auto;
 	scroll-behavior: smooth;
@@ -51,6 +53,7 @@ video {
 	grid-template-rows: repeat(3, 1fr);
 	align-items: center;
 	gap: 20px;
+	overflow-y: hidden;
 
 	&__text {
 		display: grid;
