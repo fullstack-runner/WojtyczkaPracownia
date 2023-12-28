@@ -278,7 +278,7 @@ video {
   grid-column: 2/3;
   grid-row: 3/4;
   padding: 0 10px;
-  float: start;
+  text-align: justify;
 }
 .aboutme-container__description .heading {
   font-size: 1.7rem;
