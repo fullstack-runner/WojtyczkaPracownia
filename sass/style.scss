@@ -119,6 +119,7 @@ video {
 	border-radius: 8px;
 	cursor: pointer;
 	z-index: 1000;
+	overflow-y: hidden;
 
 	&:focus {
 		outline: none;
