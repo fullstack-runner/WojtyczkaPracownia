@@ -51,7 +51,7 @@ video {
 	max-height: 100svh;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(3, 1fr);
+	// grid-template-rows: repeat(3, 1fr);
 	align-items: center;
 	gap: 20px;
 	// overflow-y: hidden;
@@ -221,7 +221,7 @@ video {
 .aboutme-container {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 100px 80svh 1fr;
+	grid-template-rows: 100px 75svh 1fr;
 	padding-bottom: 60px;
 	h1 {
 		display: flex;

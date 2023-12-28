@@ -48,7 +48,6 @@ video {
   max-height: 100svh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -241,7 +240,7 @@ video {
 .aboutme-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 100px 80svh 1fr;
+  grid-template-rows: 100px 75svh 1fr;
   padding-bottom: 60px;
 }
 .aboutme-container h1 {
