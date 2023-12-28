@@ -360,7 +360,6 @@ video {
 @media (min-width: 1200px) {
   body {
     overflow-y: hidden;
-    overflow-x: auto;
   }
   .topside p {
     font-size: 2rem;
@@ -379,19 +378,84 @@ video {
   .topside__portfoliosender:hover .blackline {
     width: 80%;
   }
+  .burger-btn {
+    display: none;
+  }
   .nav {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     position: fixed;
-    width: 100vw;
-    height: 65px;
+    width: 100%;
+    height: 100px;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     -webkit-box-shadow: -5px -5px 10px black;
             box-shadow: -5px -5px 10px black;
+    top: 0;
+  }
+  .nav__items {
+    grid-row: 2/3;
+  }
+  .nav__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav__logo {
+    grid-row: 1/2;
+  }
+  .nav__logo img {
+    width: 50px;
+    height: 50px;
+  }
+  .aboutme-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    margin-left: 40px;
+    margin-right: 50px;
+  }
+  .aboutme-container__selfpictures {
+    margin-top: 80px;
+    margin-left: 300px;
+  }
+  .aboutme-container__selfpictures img {
+    min-width: 90px;
+    max-height: 70svh;
+    width: 60vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: auto;
+    vertical-align: middle;
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+    shape-margin: 1rem;
+    border-radius: 8px;
+    -webkit-box-shadow: 5px 5px 10px rgb(75, 72, 72);
+            box-shadow: 5px 5px 10px rgb(75, 72, 72);
+  }
+  .aboutme-container__description {
+    font-family: "Gruppo", sans-serif;
+    font-size: 1.2rem;
+    float: left;
+    margin-right: 100px;
+  }
+  .aboutme-container__description h1 {
+    float: left;
+    font-weight: bold;
+  }
+  .aboutme-container__description p {
+    letter-spacing: 2px;
+    float: left;
+    margin-bottom: 2%;
+  }
+}
+@media (max-width: 1200px) {
+  .nav__logo {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
