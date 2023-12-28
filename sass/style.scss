@@ -197,19 +197,77 @@ video {
 	}
 }
 
-@keyframes navItemsAnimation{
-	from{
+@keyframes navItemsAnimation {
+	from {
 		transform: translateX(200%);
 	}
-	to{
+	to {
 		transform: translateX(0%);
 	}
 }
-.nav-items-animation{
+.nav-items-animation {
 	animation: navItemsAnimation 1s both;
 }
 
 // Strona ABOUTME
+.aboutme-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 100px 1fr 1fr ;
+	h1 {
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		grid-column: 2/3;
+		grid-row: 1/2;
+		font-weight: bold;
+		
+	}
+	h1::after{
+		// flex-direction: column;
+		content: '';
+		width: 15%;
+		height: 2px;
+		background-color: black;
+	}
+
+	&__selfpictures {
+		// position: relative;
+		
+		grid-column: 2/3;
+		grid-row: 1/2;
+		padding:0 10px;
+		margin-top: 100px;
+		// align-items: center;
+		img {
+			width: 90svw;
+			border-radius: 8px;
+		}
+	}
+
+	&__description {
+
+		margin-top: -40px;
+		grid-column: 2/3;
+		grid-row: 3/4;
+		padding: 0 10px;
+		float: start;
+		.heading{
+			font-size: 1.7rem;
+			font-weight: bold;
+		}
+		span{
+			font-weight: bold;
+		}
+		p{
+			font-size: 1.4rem;
+			margin-bottom: 10px;
+		}
+
+	}
+}
 
 //MediaQuery on Desktop
 
