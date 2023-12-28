@@ -60,8 +60,8 @@ video {
   place-content: center;
   padding: 10px;
 }
-.topside__text p {
-  font-size: 1.1rem;
+.topside__text h1 {
+  font-size: 1.8rem;
   font-weight: bold;
 }
 .topside__logo {

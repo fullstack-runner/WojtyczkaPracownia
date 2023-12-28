@@ -58,8 +58,8 @@ video {
 		grid-row: 1/2;
 		place-content: center;
 		padding: 10px;
-		p {
-			font-size: 1.1rem;
+		h1 {
+			font-size: 1.8rem;
 			font-weight: bold;
 		}
 	}
@@ -214,7 +214,7 @@ video {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: 100px 80svh 1fr;
-	padding-bottom: 60px;	
+	padding-bottom: 60px;
 	h1 {
 		display: flex;
 		justify-content: center;
@@ -267,8 +267,6 @@ video {
 }
 
 .footer {
-	
-	
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	justify-content: center;
@@ -288,7 +286,6 @@ video {
 		gap: 10px;
 	}
 
-	
 	&__social-media {
 		display: flex;
 		justify-content: center;
@@ -296,10 +293,7 @@ video {
 		grid-column: 3/4;
 		margin-right: 20px;
 		color: #000;
-		
 	}
-
-	
 
 	&__social-media {
 		gap: 25px;
@@ -309,8 +303,6 @@ video {
 		}
 	}
 }
-	
-
 
 //MediaQuery on Desktop
 
