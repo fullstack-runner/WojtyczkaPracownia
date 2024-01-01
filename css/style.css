@@ -429,10 +429,6 @@ video {
   .aboutme-container h1 {
     display: none;
   }
-  .aboutme-container__selfpictures {
-    margin-left: 300px;
-    margin-right: 50px;
-  }
   .aboutme-container__selfpictures img {
     min-width: 90px;
     max-height: 70svh;
@@ -460,6 +456,24 @@ video {
   }
   .aboutme-container__description p {
     letter-spacing: 4px;
+  }
+}
+@media (min-width: 1800px) {
+  .aboutme-container__selfpictures {
+    margin-left: 350px;
+    margin-bottom: 150px;
+  }
+  .aboutme-container__description {
+    font-family: "Gruppo", sans-serif;
+  }
+  .aboutme-container__description .heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .aboutme-container__description p {
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+    padding: 20px;
   }
 }
 @media (max-width: 1200px) {

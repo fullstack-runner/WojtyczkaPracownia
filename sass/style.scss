@@ -228,14 +228,13 @@ video {
 		background-color: black;
 	}
 
-	&__selfpictures,&__description{
+	&__selfpictures,
+	&__description {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 	}
 
-
-	
 	&__selfpictures {
 		margin-top: 15px;
 		padding: 0 10px;
@@ -245,9 +244,9 @@ video {
 		}
 	}
 
-	&__description {			
+	&__description {
 		flex-direction: column;
-		padding:  20px;
+		padding: 20px;
 		letter-spacing: 0.05em;
 		text-align: left;
 		line-height: 1.6em;
@@ -267,7 +266,6 @@ video {
 		}
 	}
 }
-
 
 .footer {
 	display: grid;
@@ -308,6 +306,7 @@ video {
 }
 
 //MediaQuery on Desktop
+
 
 @media (min-width: 1200px) {
 	body {
@@ -355,7 +354,6 @@ video {
 
 		&__items {
 			display: flex;
-			
 		}
 		&__item {
 			display: flex;
@@ -377,14 +375,14 @@ video {
 	.aboutme-container {
 		margin-top: 100px;
 		flex-direction: row;
-		
 
 		h1 {
 			display: none;
 		}
 		&__selfpictures {
-			margin-left: 300px;
-			margin-right: 50px;
+			// margin-left: 300px;
+			// margin-left: 100px;
+			// margin-right: 50px;
 			img {
 				min-width: 90px;
 				max-height: 70svh;
@@ -404,6 +402,7 @@ video {
 		&__description {
 			font-family: 'Gruppo', sans-serif;
 			margin-right: 100px;
+			// margin-top: 100px;
 			.heading {
 				font-size: 2.5rem;
 				font-weight: bold;
@@ -415,6 +414,37 @@ video {
 		}
 	}
 }
+@media (min-width: 1800px) {
+
+	.aboutme-container{
+		
+		&__selfpictures {
+			// margin-left: 300px;
+			// margin-right: 50px;
+			margin-left:  350px;
+			margin-bottom: 150px;
+			
+		
+		}
+		&__description {
+			font-family: 'Gruppo', sans-serif;
+			// margin-right: 100px;
+			
+			.heading {
+				font-size: 2.5rem;
+				font-weight: bold;
+				// padding-top: 200px;
+				// margin-top: 200px;
+			}
+
+			p {
+				font-size: 1.4rem;
+				letter-spacing: 3px;
+				padding: 20px;
+			}
+		}
+	}
+	}
 @media (max-width: 1200px) {
 	.nav {
 		&__logo {
