@@ -45,37 +45,7 @@ video {
 }
 
 .topside {
-  max-height: 100svh;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 20px;
-}
-.topside__text {
-  display: grid;
-  grid-column: 1/4;
-  grid-row: 1/2;
-  place-content: center;
-  padding: 10px;
-}
-.topside__text h1 {
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-.topside__logo {
-  display: grid;
-  grid-column: 2/3;
-  grid-row: 2/3;
-  place-content: center;
-}
-.topside__logo img {
-  min-width: 250px;
-  height: 250px;
-}
-.topside__portfoliosender {
+  min-height: 100svh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,14 +53,33 @@ video {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.topside__text, .topside__logo, .topside__portfoliosender {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  grid-column: 2/3;
-  grid-row: 3/4;
+}
+.topside__text h1, .topside__logo h1, .topside__portfoliosender h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.topside__logo img {
+  min-width: 250px;
+  height: 250px;
+}
+.topside__portfoliosender {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .topside__portfoliosender a {
   color: black;
@@ -104,7 +93,7 @@ video {
   transition: width 0.3s linear;
 }
 .topside__portfoliosender:hover .blackline {
-  width: 75%;
+  width: 45%;
 }
 
 .burger-btn {
@@ -382,44 +371,55 @@ video {
     display: none;
   }
   .nav {
-    grid-template-columns: repeat(2, 1fr);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     height: 100px;
     -webkit-transform: translateX(0);
             transform: translateX(0);
     -webkit-box-shadow: -5px -5px 10px black;
             box-shadow: -5px -5px 10px black;
+    background-color: transparent;
     top: 0;
   }
   .nav__items {
-    grid-row: 2/3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .nav__item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    color: #000;
+    font-size: 1.8rem;
   }
   .nav__logo {
-    grid-row: 1/2;
+    position: absolute;
+    top: 60px;
+    left: 50px;
   }
   .nav__logo img {
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
   }
   .aboutme-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    margin-top: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: end;
-    margin-left: 40px;
-    margin-right: 50px;
+  }
+  .aboutme-container h1 {
+    display: none;
   }
   .aboutme-container__selfpictures {
-    margin-top: 80px;
     margin-left: 300px;
+    margin-right: 50px;
   }
   .aboutme-container__selfpictures img {
     min-width: 90px;
@@ -440,18 +440,15 @@ video {
   }
   .aboutme-container__description {
     font-family: "Gruppo", sans-serif;
-    font-size: 1.2rem;
-    float: left;
     margin-right: 100px;
   }
-  .aboutme-container__description h1 {
+  .aboutme-container__description .heading {
+    font-size: 2.5rem;
     float: left;
     font-weight: bold;
   }
   .aboutme-container__description p {
-    letter-spacing: 2px;
-    float: left;
-    margin-bottom: 2%;
+    letter-spacing: 4px;
   }
 }
 @media (max-width: 1200px) {
