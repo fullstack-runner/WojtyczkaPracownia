@@ -228,12 +228,21 @@ video {
 }
 
 .aboutme-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 80px 75svh 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .aboutme-container h1 {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -247,8 +256,7 @@ video {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  grid-column: 2/3;
-  grid-row: 1/2;
+  margin: 25px 0 25px 0;
   font-weight: bold;
 }
 .aboutme-container h1::after {
@@ -257,17 +265,19 @@ video {
   height: 2px;
   background-color: black;
 }
-.aboutme-container__selfpictures {
+.aboutme-container__selfpictures, .aboutme-container__description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  grid-column: 2/3;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.aboutme-container__selfpictures {
+  margin-top: 15px;
   padding: 0 10px;
 }
 .aboutme-container__selfpictures img {
@@ -275,14 +285,18 @@ video {
   border-radius: 8px;
 }
 .aboutme-container__description {
-  grid-column: 2/3;
-  padding: 0 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
   letter-spacing: 0.05em;
   text-align: left;
   line-height: 1.6em;
   margin-bottom: 70px;
 }
 .aboutme-container__description .heading {
+  margin: 20px 0 20px 0;
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -406,13 +420,11 @@ video {
     height: 75px;
   }
   .aboutme-container {
-    margin-top: 5%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: end;
+    margin-top: 100px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .aboutme-container h1 {
     display: none;
@@ -444,7 +456,6 @@ video {
   }
   .aboutme-container__description .heading {
     font-size: 2.5rem;
-    float: left;
     font-weight: bold;
   }
   .aboutme-container__description p {
