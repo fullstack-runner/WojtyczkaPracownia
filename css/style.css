@@ -361,9 +361,6 @@ video {
 }
 
 @media (min-width: 1200px) {
-  body {
-    overflow-y: hidden;
-  }
   .topside p {
     font-size: 2rem;
   }
