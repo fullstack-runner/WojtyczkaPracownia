@@ -361,6 +361,9 @@ video {
 }
 
 @media (min-width: 1200px) {
+  body {
+    overflow-y: hidden;
+  }
   .topside p {
     font-size: 2rem;
   }
@@ -381,52 +384,61 @@ video {
   .burger-btn {
     display: none;
   }
-  .nav {
+}
+@media (min-width: 1200px) {
+  .aboutme-desktop {
+    display: grid;
+    grid-template-rows: 75px 1fr 75px;
+  }
+  .aboutme-desktop .nav {
+    position: fixed;
+    grid-row: 1/2;
+    max-height: 75px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: fixed;
-    width: 100vw;
-    height: 100px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-transform: translateX(0);
             transform: translateX(0);
+    background-color: #fff;
     -webkit-box-shadow: -5px -5px 10px black;
             box-shadow: -5px -5px 10px black;
-    background-color: white;
-    top: 0;
   }
-  .nav__items {
+  .aboutme-desktop .nav__items {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .nav__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .aboutme-desktop .nav__item {
+    padding: 0 60px;
+    font-size: 1.5rem;
     color: #000;
-    font-size: 1.8rem;
   }
-  .nav__logo {
-    position: absolute;
-    top: 60px;
-    left: 50px;
-  }
-  .nav__logo img {
+  .aboutme-desktop .nav__logo {
+    position: fixed;
+    margin-top: 70px;
+    margin-right: 1500px;
     width: 75px;
-    height: 75px;
   }
-  .aboutme-container {
-    margin-top: 100px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+  .aboutme-desktop .nav__logo img {
+    max-height: 75px;
   }
-  .aboutme-container h1 {
+  .aboutme-desktop .aboutme-container {
+    display: grid;
+    grid-row: 2/3;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 100px;
+  }
+  .aboutme-desktop .aboutme-container h1 {
     display: none;
   }
-  .aboutme-container__selfpictures img {
+  .aboutme-desktop .aboutme-container__selfpictures img {
     min-width: 90px;
     max-height: 70svh;
     width: 60vh;
@@ -443,34 +455,34 @@ video {
     -webkit-box-shadow: 5px 5px 10px rgb(75, 72, 72);
             box-shadow: 5px 5px 10px rgb(75, 72, 72);
   }
-  .aboutme-container__description {
-    font-family: "Gruppo", sans-serif;
-    margin-right: 100px;
+  .aboutme-desktop .aboutme-container__description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: end;
+        align-content: flex-end;
   }
-  .aboutme-container__description .heading {
+  .aboutme-desktop .aboutme-container__description h2 {
     font-size: 2.5rem;
-    font-weight: bold;
+    margin-bottom: 100px;
   }
-  .aboutme-container__description p {
-    letter-spacing: 4px;
+  .aboutme-desktop .aboutme-container .story p {
+    letter-spacing: 2px;
+    float: left;
+    margin-bottom: 4%;
   }
-}
-@media (min-width: 1800px) {
-  .aboutme-container__selfpictures {
-    margin-left: 350px;
-    margin-bottom: 150px;
-  }
-  .aboutme-container__description {
-    font-family: "Gruppo", sans-serif;
-  }
-  .aboutme-container__description .heading {
-    font-size: 2.5rem;
-    font-weight: bold;
-  }
-  .aboutme-container__description p {
-    font-size: 1.4rem;
-    letter-spacing: 3px;
-    padding: 20px;
+  .aboutme-desktop .aboutme-container .footer {
+    grid-row: 3/4;
   }
 }
 @media (max-width: 1200px) {
