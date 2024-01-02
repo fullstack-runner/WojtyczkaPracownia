@@ -14,6 +14,7 @@
 html {
   font-family: "Cinzel", serif;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -24,7 +25,6 @@ p {
 body {
   min-height: 100svh;
   font-size: 1.6rem;
-  scroll-behavior: smooth;
 }
 
 li {
@@ -392,7 +392,7 @@ video {
             transform: translateX(0);
     -webkit-box-shadow: -5px -5px 10px black;
             box-shadow: -5px -5px 10px black;
-    background-color: transparent;
+    background-color: white;
     top: 0;
   }
   .nav__items {
