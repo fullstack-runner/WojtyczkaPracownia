@@ -433,7 +433,6 @@ video {
     display: grid;
     grid-row: 2/3;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 100px;
   }
   .aboutme-desktop .aboutme-container h1 {
     display: none;
@@ -456,25 +455,10 @@ video {
             box-shadow: 5px 5px 10px rgb(75, 72, 72);
   }
   .aboutme-desktop .aboutme-container__description {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-line-pack: end;
-        align-content: flex-end;
+    margin-right: 100px;
   }
   .aboutme-desktop .aboutme-container__description h2 {
     font-size: 2.5rem;
-    margin-bottom: 100px;
   }
   .aboutme-desktop .aboutme-container .story p {
     letter-spacing: 2px;

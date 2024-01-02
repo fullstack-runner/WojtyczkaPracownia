@@ -454,7 +454,7 @@ video {
 			display: grid;
 			grid-row: 2/3;
 			grid-template-columns: 1fr 1fr;
-			margin-bottom: 100px;
+			// margin-bottom: 100px;
 			h1 {
 				display: none;
 			}
@@ -477,19 +477,15 @@ video {
 			}
 
 			&__description {
-				
-				display: flex;
-				justify-content: center;
-				flex-direction: column;
-				justify-content: space-between;
-				align-content: flex-end;
+				margin-right: 100px;
 
 				h2 {
 					font-size: 2.5rem;
-					margin-bottom: 100px;
+					// margin-bottom: 100px;
 				}
 			}
 			.story {
+				// margin-top: 100px;
 				// padding-right: 100px;
 				// grid-row: 2/3;
 				p {
