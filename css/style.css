@@ -429,6 +429,68 @@ video {
           box-shadow: 5px 5px 10px rgb(75, 72, 72);
 }
 
+.peachholiday-container, .modernclasic-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.peachholiday-container h1, .modernclasic-container h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 25px;
+  font-weight: bold;
+}
+.peachholiday-container h1::after, .modernclasic-container h1::after {
+  content: "";
+  margin-top: 10px;
+  margin-bottom: 50px;
+  width: 15%;
+  height: 2px;
+  background-color: black;
+}
+.peachholiday-container .peachholiday__images, .peachholiday-container .modernclasic__images, .modernclasic-container .peachholiday__images, .modernclasic-container .modernclasic__images {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  padding-bottom: 60px;
+}
+.peachholiday-container .peachholiday__images img, .peachholiday-container .modernclasic__images img, .modernclasic-container .peachholiday__images img, .modernclasic-container .modernclasic__images img {
+  grid-column: 3/19;
+  min-height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 1rem;
+  border-radius: 8px;
+  -webkit-box-shadow: 5px 5px 10px rgb(75, 72, 72);
+          box-shadow: 5px 5px 10px rgb(75, 72, 72);
+}
+
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
