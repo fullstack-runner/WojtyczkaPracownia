@@ -429,7 +429,7 @@ video {
           box-shadow: 5px 5px 10px rgb(75, 72, 72);
 }
 
-.peachholiday-container, .modernclasic-container {
+.peachholiday-container, .modernclasic-container, .hotminimalizm-container, .orchards-container, .eternalspring-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -444,7 +444,7 @@ video {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.peachholiday-container h1, .modernclasic-container h1 {
+.peachholiday-container h1, .modernclasic-container h1, .hotminimalizm-container h1, .orchards-container h1, .eternalspring-container h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -461,7 +461,7 @@ video {
   margin-top: 25px;
   font-weight: bold;
 }
-.peachholiday-container h1::after, .modernclasic-container h1::after {
+.peachholiday-container h1::after, .modernclasic-container h1::after, .hotminimalizm-container h1::after, .orchards-container h1::after, .eternalspring-container h1::after {
   content: "";
   margin-top: 10px;
   margin-bottom: 50px;
@@ -469,12 +469,12 @@ video {
   height: 2px;
   background-color: black;
 }
-.peachholiday-container .peachholiday__images, .peachholiday-container .modernclasic__images, .modernclasic-container .peachholiday__images, .modernclasic-container .modernclasic__images {
+.peachholiday-container .peachholiday__images, .peachholiday-container .modernclasic__images, .peachholiday-container .hotminimalizm__images, .peachholiday-container .orchards__images, .peachholiday-container .eternalspring__images, .modernclasic-container .peachholiday__images, .modernclasic-container .modernclasic__images, .modernclasic-container .hotminimalizm__images, .modernclasic-container .orchards__images, .modernclasic-container .eternalspring__images, .hotminimalizm-container .peachholiday__images, .hotminimalizm-container .modernclasic__images, .hotminimalizm-container .hotminimalizm__images, .hotminimalizm-container .orchards__images, .hotminimalizm-container .eternalspring__images, .orchards-container .peachholiday__images, .orchards-container .modernclasic__images, .orchards-container .hotminimalizm__images, .orchards-container .orchards__images, .orchards-container .eternalspring__images, .eternalspring-container .peachholiday__images, .eternalspring-container .modernclasic__images, .eternalspring-container .hotminimalizm__images, .eternalspring-container .orchards__images, .eternalspring-container .eternalspring__images {
   display: grid;
   grid-template-columns: repeat(20, 1fr);
   padding-bottom: 60px;
 }
-.peachholiday-container .peachholiday__images img, .peachholiday-container .modernclasic__images img, .modernclasic-container .peachholiday__images img, .modernclasic-container .modernclasic__images img {
+.peachholiday-container .peachholiday__images img, .peachholiday-container .modernclasic__images img, .peachholiday-container .hotminimalizm__images img, .peachholiday-container .orchards__images img, .peachholiday-container .eternalspring__images img, .modernclasic-container .peachholiday__images img, .modernclasic-container .modernclasic__images img, .modernclasic-container .hotminimalizm__images img, .modernclasic-container .orchards__images img, .modernclasic-container .eternalspring__images img, .hotminimalizm-container .peachholiday__images img, .hotminimalizm-container .modernclasic__images img, .hotminimalizm-container .hotminimalizm__images img, .hotminimalizm-container .orchards__images img, .hotminimalizm-container .eternalspring__images img, .orchards-container .peachholiday__images img, .orchards-container .modernclasic__images img, .orchards-container .hotminimalizm__images img, .orchards-container .orchards__images img, .orchards-container .eternalspring__images img, .eternalspring-container .peachholiday__images img, .eternalspring-container .modernclasic__images img, .eternalspring-container .hotminimalizm__images img, .eternalspring-container .orchards__images img, .eternalspring-container .eternalspring__images img {
   grid-column: 3/19;
   min-height: 100%;
   width: 100%;

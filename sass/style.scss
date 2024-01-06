@@ -393,7 +393,7 @@ video {
 		// }
 	}
 }
-.peachholiday-container,.modernclasic-container {
+.peachholiday-container,.modernclasic-container, .hotminimalizm-container, .orchards-container, .eternalspring-container  {
 	// min-height: 100svh;
 	// display: grid;
 	// grid-template-columns: repeat(12, 1fr);
@@ -422,7 +422,7 @@ video {
 		background-color: black;
 	}
 
-	.peachholiday, .modernclasic {
+	.peachholiday, .modernclasic,.hotminimalizm, .orchards, .eternalspring {
 		// display: grid;
 		// grid-template-columns: ;
 		&__images {
