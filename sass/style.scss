@@ -393,7 +393,11 @@ video {
 		// }
 	}
 }
-.peachholiday-container,.modernclasic-container, .hotminimalizm-container, .orchards-container, .eternalspring-container  {
+.peachholiday-container,
+.modernclasic-container,
+.hotminimalizm-container,
+.orchards-container,
+.eternalspring-container {
 	// min-height: 100svh;
 	// display: grid;
 	// grid-template-columns: repeat(12, 1fr);
@@ -422,11 +426,14 @@ video {
 		background-color: black;
 	}
 
-	.peachholiday, .modernclasic,.hotminimalizm, .orchards, .eternalspring {
+	.peachholiday,
+	.modernclasic,
+	.hotminimalizm,
+	.orchards,
+	.eternalspring {
 		// display: grid;
 		// grid-template-columns: ;
 		&__images {
-
 			display: grid;
 			grid-template-columns: repeat(20, 1fr);
 			padding-bottom: 60px;
@@ -448,6 +455,89 @@ video {
 			}
 		}
 	}
+}
+
+.publication-container {
+	// position: relative;
+	min-height: 100svh;
+	display: grid;
+	grid-template-columns: repeat(30, 1fr);
+	grid-template-rows: repeat(30, 1fr);
+	// bottom: 0;
+	&__publication {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(12, 1fr);
+		grid-column: 3/14;
+		grid-row: 5 /20;
+		justify-content: center;
+		align-items: center;
+		.modivo {
+			position: relative;
+			
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			// grid-row: ;
+			::before {
+				position: absolute;
+				// position: fixed;
+	
+				content: url(../img/Brzoskwiniowelato/1.jpg);
+				left: 800px;
+				max-height: 250px;
+				max-width: 100px;
+				// grid-column: 20/30;
+				// grid-row: 1/6;
+				// display: none;
+				// left: px;
+				// right: 50px;
+				opacity: 0;
+				// display: none;
+			}
+	
+			a:hover::before {
+				// display: block;
+				opacity: 1;
+			}
+		}
+		.aple {
+			position: relative;
+			
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			// grid-row: ;
+			::before {
+				position: absolute;
+				// position: fixed;
+	
+				content: url(../img/Brzoskwiniowelato/2.jpg);
+				left: 800px;
+				max-height: 250px;
+				max-width: 100px;
+				// grid-column: 20/30;
+				// grid-row: 1/6;
+				// display: none;
+				// left: px;
+				// right: 50px;
+				opacity: 0;
+				// display: none;
+			}
+	
+			a:hover::before {
+				// display: block;
+				opacity: 1;
+			}
+		}
+
+			
+		}
+		
+
+		
 }
 
 .footer {
