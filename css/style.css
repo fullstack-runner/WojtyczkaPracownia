@@ -665,9 +665,6 @@ video {
 }
 
 @media (min-width: 1200px) {
-  body {
-    overflow-y: hidden;
-  }
   .topside p {
     font-size: 2rem;
   }
@@ -688,8 +685,6 @@ video {
   .burger-btn {
     display: none;
   }
-}
-@media (min-width: 1200px) {
   .aboutme-desktop {
     display: grid;
     grid-template-rows: 75px 1fr 75px;
@@ -770,18 +765,6 @@ video {
     margin-bottom: 4%;
   }
   .portfolio-container {
-    display: grid;
-    grid-template-columns: repeat(6, 33vw);
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 100svh;
-    width: 100%;
-  }
-  .portfolio-container h1 {
-    display: none;
-  }
-  .portfolio {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -790,11 +773,32 @@ video {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 300vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 33vw;
     height: 80vh;
     margin-top: 100px;
   }
+  .portfolio-container h1 {
+    display: none;
+  }
+  .portfolio {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: -300px;
+  }
   .portfolio__box {
+    display: inline-block;
     width: 33vw;
     height: 80vh;
   }
