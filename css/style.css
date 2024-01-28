@@ -770,27 +770,33 @@ video {
     margin-bottom: 4%;
   }
   .portfolio-container {
-    overflow-y: hidden;
-    overflow-x: scroll;
+    display: grid;
+    grid-template-columns: repeat(6, 33vw);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100svh;
     width: 100%;
   }
   .portfolio-container h1 {
     display: none;
   }
   .portfolio {
-    display: grid;
-    grid-template-columns: repeat(6, 33vw);
-    grid-template-rows: repeat(6, 33vw);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 100svh;
-    width: 300%;
+    width: 300vw;
+    height: 80vh;
+    margin-top: 100px;
   }
   .portfolio__box {
     width: 33vw;
     height: 80vh;
-    margin-top: 100px;
   }
   .footer {
     grid-row: 3/4;
