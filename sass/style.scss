@@ -295,9 +295,10 @@ video {
 	}
 
 	.portfolio {
-		display: flex;
+		// display: flex;
 		// display: block;
-		flex-direction: column;
+		// display: block;
+		// flex-direction: column;
 		// min-height: 100svh;
 		margin-top: 20px;
 		margin-bottom: 50px;
@@ -753,15 +754,25 @@ video {
 		}
 	}
 	.portfolio{
+		// position: relative;
+		position: absolute;
 		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		width: 300vw;
-		height: 80vh;
-		margin-top: 100px;
+		top: 100px;
+		
+		// justify-content: center;
+		// align-items: center;
+		// justify-content: space-evenly;
+		// flex-direction: row;
+		
+
+		width: 175svw;
+		// height: 80vh;
+		
+		// margin-top: 100px;
 		&__box{
+			// top: 0;
 			width: 33vw;
-			height: 80vh;	
+			height: 70vh;	
 		}
 	}
 	

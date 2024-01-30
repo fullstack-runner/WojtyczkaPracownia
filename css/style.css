@@ -349,13 +349,6 @@ video {
   background-color: black;
 }
 .portfolio-container .portfolio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   margin-top: 20px;
   margin-bottom: 50px;
 }
@@ -782,21 +775,16 @@ video {
     display: none;
   }
   .portfolio {
+    position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 300vw;
-    height: 80vh;
-    margin-top: 100px;
+    top: 100px;
+    width: 175svw;
   }
   .portfolio__box {
     width: 33vw;
-    height: 80vh;
+    height: 70vh;
   }
   .footer {
     grid-row: 3/4;
